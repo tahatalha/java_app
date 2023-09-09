@@ -1,5 +1,4 @@
-pipline{
-
+pipeline{
     agent any
     stages('Git Checkout'){
         steps{
