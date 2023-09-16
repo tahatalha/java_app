@@ -1,3 +1,4 @@
+@Library('java_sharedlib')
 pipeline{
     agent any
 
@@ -7,7 +8,7 @@ pipeline{
                 script{
                     gitCheckout(
                         branch: "main"
-                        url: "https://github.com/tahatalha/java_sharedlib.git"
+                        url: "https://github.com/tahatalha/java_app.git"
                     )
                 }
             }
