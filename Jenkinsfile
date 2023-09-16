@@ -36,5 +36,13 @@ pipeline{
                 }
             }
         }
+        stage('StaticCodeAnalysis Maven'){
+        when{ expression {param.action == 'create'}}
+            steps{
+                script{
+                    staticCodeAnalysis()
+                }
+            }
+        }
     }
 }
